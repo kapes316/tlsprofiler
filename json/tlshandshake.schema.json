@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://firebird.cisco.com/tlshandshake.schema.json",
+    "title": "TLS Profiler",
+    "type": "object",
+    "properties": {
+        "versionID": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        },
+        "connectionStatus": {
+            "type": "number",
+            "description": "0 if the tcp connection was ok, non-zero if not"
+        },
+        "negotiatedTLSVersion": {
+            "type": "string"
+        },
+        "negotiatedCipher": {
+            "type": "object",
+            "properties": {
+                "cipherName": {
+                    "type": "string"
+                },
+                "cipherNumber": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "cipherName",
+                "cipherNumber"
+            ]
+        },
+        "extensions": {
+            "description": "TLS extensions sent back in the server hello",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "extensionName": {
+                        "type": "string"
+                    },
+                    "extensionNumber": {
+                        "type": "number"
+                    }
+                }
+            },
+            "uniqueItems": true
+        },
+        "serverCertificate": {
+            "description": "PEM encoded certificate chain",
+            "type": "array",
+            "certificate": {
+                "description": "one line of pem",
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "url",
+        "connectionStatus"
+    ]
+}

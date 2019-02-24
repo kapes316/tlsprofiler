@@ -1,0 +1,6 @@
+{
+    "sha256sum": "f1c32966b3d0bd4fee62b956e937a2cb210c8d96ec4a34381ae7c5e93ae853a6",
+    "subject": "www.cisco.com",
+    "issuer": "Digicert CA",
+    "signatureAlgorithm" : "SHA-256 with RSA Encryption"
+}

@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://firebird.cisco.com/tlscert.schema.json",
+    "title": "TLS Cert Profile",
+    "type": "object",
+    "properties": {
+        "sha256sum": {
+            "type": "string"
+        },
+        "subject": {
+            "type": "string"
+        },
+        "issuer": {
+            "type": "string"
+        },
+        "signatureAlgorithm": {
+            "type": "string"
+        },
+        "keyAlgorithm": {
+            "type": "string"
+        },
+        "keySize": {
+            "description": "bit count",
+            "type": "number"
+        },
+        "serialNumber": {
+            "type": "string"
+        },
+        "notValidBefore": {
+            "type": "string"
+        },
+        "notValidAfter": {
+            "type": "string"
+        },
+        "extensions": {
+            "description": "Certificate extensions",
+            "type": "array",
+            "extension": {
+                "description": "the raw value of the extension number",
+                "type": "number",
+                "critical": "boolean"
+            },
+            "uniqueItems": true
+        }
+    },
+    "required": [
+        "sha256sum",
+        "subject",
+        "issuer"
+    ]
+}

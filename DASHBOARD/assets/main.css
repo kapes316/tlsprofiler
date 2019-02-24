@@ -1,0 +1,65 @@
+/* --------------------------------------------------------------------------
+  https://css-tricks.com/snippets/css/using-font-face/
+  TODO: create and add woff2 format
+-------------------------------------------------------------------------- */
+@font-face {
+    font-family: "CiscoSansThin";
+    src: url("CiscoSansTTThin.woff") format("woff");
+}
+
+@font-face {
+    font-family: "CiscoSansExtraLight";
+    src: url("CiscoSansTTExtraLight.woff") format("woff");
+}
+
+@font-face {
+    font-family: "CiscoSansLight";
+    src: url("CiscoSansTTLight.woff") format("woff");
+}
+
+@font-face {
+    font-family: "CiscoSansRegular";
+    src: url("CiscoSansTTRegular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "CiscoSansBold";
+    src: url("CiscoSansTTBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: cui-font;
+    src: url(cui-font.eot);
+    src: url(cui-font.eot?#iefix) format("eot"),
+    url(cui-font.woff2) format("woff2"),
+    url(cui-font.woff) format("woff"),
+    url(cui-font.ttf) format("truetype"),
+    url(cui-font.svg#cui-font) format("svg");
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: "CiscoSansRegular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+}
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #dfdfdf;
+    box-shadow: 0 0px 3px 0 rgba(0,0,0,0.2);
+    padding: 1.25em 1em;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.app-name {
+    display: inline-block;
+    font-family: "CiscoSansThin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 0 0 0 1em;
+    vertical-align: middle;
+}

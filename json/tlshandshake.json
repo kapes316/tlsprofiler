@@ -1,0 +1,25 @@
+{
+    "versionID": "openssl-1.1.1-myID",
+    "url": "www.cisco.com",
+    "connectionStatus": 0,
+    "negotiatedTLSVersion": "1.2",
+    "negotiatedCipher": { "cipherName": "super cipher", "cipherNumber": 3344 },
+    "extensions": [{"extensionName": "Extended Master Secret","extensionNumber": 23}, {"extensionName": "Intended Master Secret","extensionNumber": 223}],
+    "serverCertificate" : [
+        "-----BEGIN CERTIFICATE-----",
+        "MIICPjCCAcSgAwIBAgIJAI44Bto+Le4vMAoGCCqGSM49BAMCMF0xCzAJBgNVBAYT",
+        "AkVDMQ4wDAYDVQQIDAVDdXJ2ZTERMA8GA1UEBwwIRWxsaXB0aWMxEjAQBgNVBAoM",
+        "CXNlY3AzODRyMTEXMBUGA1UEAwwObGludXgyLmJjbS5wcnYwHhcNMTUxMDE5MTky",
+        "MzA3WhcNMjUxMDE2MTkyMzA3WjBdMQswCQYDVQQGEwJFQzEOMAwGA1UECAwFQ3Vy",
+        "dmUxETAPBgNVBAcMCEVsbGlwdGljMRIwEAYDVQQKDAlzZWNwMzg0cjExFzAVBgNV",
+        "BAMMDmxpbnV4Mi5iY20ucHJ2MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAE/OFDd2s8",
+        "+H06XyFEgvRW9xdv/EN6OIPz5uAXT8Ng/Y0OzEgnULoJ3InYYPm5KP1gfobZuSYl",
+        "IBuIG12NP3dVeSOFTq1YEbmR6IvYRJBN8PWCpC6CG0rGY7JnuKwxLPNpo1AwTjAd",
+        "BgNVHQ4EFgQUoa6xH7JtjHGfcglaMuUjZIk0sTcwHwYDVR0jBBgwFoAUoa6xH7Jt",
+        "jHGfcglaMuUjZIk0sTcwDAYDVR0TBAUwAwEB/zAKBggqhkjOPQQDAgNoADBlAjEA",
+        "8GVYXC0Fh2yyZQXdigyRF1xgFUFHaz8XZeW/WJ6fK8ltNSA5Og5FLz4hN1y3NlVO",
+        "AjBIIIRtlCmt1PTHZv2A/8W+v9wPSgwXC8yJnuTyTvjlzTokmvrVURVN17PRqn49",
+        "Xzk=",
+        "-----END CERTIFICATE-----"
+    ]
+}
